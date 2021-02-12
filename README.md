@@ -30,7 +30,7 @@ users and items.
 Reference for Topic Modeling with  Latent Dirichlet Allocation
 
 
-**Statistical Referesher**
+**Statistical Refresher**
 - [Generative and Discriminative model](https://medium.com/@mlengineer/generative-and-discriminative-models-af5637a66a3)
 - [Joint Probability vs Conditional Probability](https://medium.com/@mlengineer/joint-probability-vs-conditional-probability-fa2d47d95c4a)
 - https://www.statisticshowto.com/likelihood-function/
@@ -42,14 +42,19 @@ Reference for Topic Modeling with  Latent Dirichlet Allocation
 - https://en.wikipedia.org/wiki/Dirichlet_distribution
 - https://towardsdatascience.com/dirichlet-distribution-a82ab942a879
 
-**Blogs explaning LDA Maths**
+**Blogs explaining LDA Maths**
 - https://towardsdatascience.com/light-on-math-machine-learning-intuitive-guide-to-latent-dirichlet-allocation-437c81220158
 - https://towardsdatascience.com/latent-dirichlet-allocation-lda-9d1cd064ffa2
 - https://medium.com/@lettier/how-does-lda-work-ill-explain-using-emoji-108abf40fa7d
 
 **Evaluation Metric**
+- https://towardsdatascience.com/perplexity-in-language-models-87a196019a94
+- https://planspace.org/2013/09/23/perplexity-what-it-is-and-what-yours-is/
+- https://stats.stackexchange.com/questions/10302/what-is-perplexity
+- https://svn.aksw.org/papers/2015/WSDM_Topic_Evaluation/public.pdf
+- https://www.statlect.com/glossary/log-likelihood
 - https://labs.imaginea.com/how-to-measure-topic-coherence/
-
+- 
 **Examples**
 - [Scala Example](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/3741049972324885/3783546674231782/4413065072037724/latest.html)
 - https://towardsdatascience.com/unsupervised-nlp-topic-models-as-a-supervised-learning-input-cf8ee9e5cf28
@@ -57,10 +62,11 @@ Reference for Topic Modeling with  Latent Dirichlet Allocation
 
 ## Environment Setup
 ```
-sudo apt install openjdk-8-jdk
-export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/
-
 #Download and extract Spark binaries to /opt/softwares/spark-2.4.7-bin-hadoop2.7/
+sudo apt install openjdk-8-jdk
+
+
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/
 export SPARK_HOME=/opt/softwares/spark-2.4.7-bin-hadoop2.7/
 export PATH=$SPARK_HOME/bin:$PATH
 export PYSPARK_PYTHON=/opt/envs/ai4e/bin/python
@@ -88,13 +94,3 @@ My machine has following configuration...
 - 32GB RAM
 
 Spark Standalone server:
-```
-
-
-
-
-
-
-#export the same on a new shell
-jupyter-lab
-
