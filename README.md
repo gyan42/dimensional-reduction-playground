@@ -1,5 +1,33 @@
-# lda-reference
-Reference for Topic Modleing with  Latent Dirichlet Allocation
+# Dimensional Reduction
+
+## SVD
+
+The Singular Value Decomposition (SVD), a method from linear algebra that has been generally used as a 
+dimensionality reduction technique in machine learning. SVD is a matrix factorisation technique, which reduces the 
+number of features of a dataset by reducing the space dimension from N-dimension to K-dimension (where K<N). 
+
+In the context of the recommender system, the SVD is used as a collaborative filtering technique. 
+It uses a matrix structure where each row represents a user, and each column represents an item. 
+The elements of this matrix are the ratings that are given to items by users.
+
+The factorisation of this matrix is done by the singular value decomposition. It finds factors of matrices from the 
+factorisation of a high-level (user-item-rating) matrix. The singular value decomposition is a method of decomposing
+a matrix into three other matrices as given below:
+
+![img.png](images/svd.png)
+
+Where A is a `m x n` utility matrix, U is a `m x r` orthogonal left singular matrix, which represents the relationship 
+between users and latent factors, S is a r x r diagonal matrix, which describes the strength of each latent factor 
+and V is a r x n diagonal right singular matrix, which indicates the similarity between items and latent factors. 
+The latent factors here are the characteristics of the items, for example, the genre of the music. 
+The SVD decreases the dimension of the utility matrix A by extracting its latent factors. It maps each user and each
+item into a r-dimensional latent space. This mapping facilitates a clear representation of relationships between
+users and items. 
+
+## NMF
+
+## LDA
+Reference for Topic Modeling with  Latent Dirichlet Allocation
 
 
 **Statistical Referesher**
@@ -38,6 +66,8 @@ export PATH=$SPARK_HOME/bin:$PATH
 export PYSPARK_PYTHON=/opt/envs/ai4e/bin/python
 export PYSPARK_DRIVER_PYTHON=/opt/envs/ai4e/bin/python
 ```
+Spark UI: [http://localhost:8080](http://localhost:8080)   
+Spark Master URL : spark://IMCHLT276:7077
 
 Shell 1
 ```
