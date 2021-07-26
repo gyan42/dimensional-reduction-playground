@@ -29,6 +29,18 @@ users and items.
 ## LDA
 Reference for Topic Modeling with  Latent Dirichlet Allocation
 
+[N x V] = [N x k] [k x V]
+
+- α — Distribution related parameter that governs what the distribution of topics is for all the documents in the corpus looks like
+- θ(i,j);  the topic distribution for documents
+  - i th document to containing words belonging to the j th topic
+- η — Distribution related parameter that governs what the distribution of words in each topic looks like  
+- β(i,j) represents the probability of the i th topic containing the j th word.
+
+
+- Dirichlet distribution is the multivariate generalisation of the Beta distribution.
+  - laRGE VALUES PUSHED THE DISTRIBUTION TOWARDS THE  MIDDLES OTHERWISE TO THE CORNER
+  
 
 **Statistical Refresher**
 - [Generative and Discriminative model](https://medium.com/@mlengineer/generative-and-discriminative-models-af5637a66a3)
@@ -46,6 +58,7 @@ Reference for Topic Modeling with  Latent Dirichlet Allocation
 - https://towardsdatascience.com/light-on-math-machine-learning-intuitive-guide-to-latent-dirichlet-allocation-437c81220158
 - https://towardsdatascience.com/latent-dirichlet-allocation-lda-9d1cd064ffa2
 - https://medium.com/@lettier/how-does-lda-work-ill-explain-using-emoji-108abf40fa7d
+- [how to control density of topics / doc and words / topic ?](https://datascience.stackexchange.com/questions/199/what-does-the-alpha-and-beta-hyperparameters-contribute-to-in-latent-dirichlet-a)
 
 **Evaluation Metric**
 - https://towardsdatascience.com/perplexity-in-language-models-87a196019a94
