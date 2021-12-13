@@ -61,6 +61,7 @@ Reference for Topic Modeling with  Latent Dirichlet Allocation
 - [how to control density of topics / doc and words / topic ?](https://datascience.stackexchange.com/questions/199/what-does-the-alpha-and-beta-hyperparameters-contribute-to-in-latent-dirichlet-a)
 
 **Evaluation Metric**
+- https://highdemandskills.com/topic-model-evaluation/
 - https://towardsdatascience.com/perplexity-in-language-models-87a196019a94
 - https://planspace.org/2013/09/23/perplexity-what-it-is-and-what-yours-is/
 - https://stats.stackexchange.com/questions/10302/what-is-perplexity
